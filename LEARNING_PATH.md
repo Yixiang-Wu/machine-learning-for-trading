@@ -1,4 +1,6 @@
-# ML4T 学习路径（个人笔记）
+# ML4T 学习路径
+
+只写计划。阅读进度见 [`PROGRESS.md`](PROGRESS.md)，笔记见 [`NOTES.md`](NOTES.md)。
 
 主线：以 `case_studies/etfs/` 为主干，按编号顺序读，不懂的概念跳回对应章节。
 
@@ -14,16 +16,16 @@
 
 ### 必读（约 400 行，1 小时内）
 
-- [ ] `docs/what-this-is.md`：哪些能直接复现，哪些需要 GPU 或额外数据，哪些不承诺
-- [ ] `01_process_is_edge/README.md`：全书总纲，整体工作流和证据边界
-- [ ] `06_strategy_definition/README.md`：交易设定、评估指标、walk-forward 协议、baseline、run logging
-- [ ] `case_studies/README.md`：9 个案例共用的流水线阶段和目录结构
-- [ ] `case_studies/etfs/README.md`：etfs 参数和 notebook 与章节对照表
+- `docs/what-this-is.md`：哪些能直接复现，哪些需要 GPU 或额外数据，哪些不承诺
+- `01_process_is_edge/README.md`：全书总纲，整体工作流和证据边界
+- `06_strategy_definition/README.md`：交易设定、评估指标、walk-forward 协议、baseline、run logging
+- `case_studies/README.md`：9 个案例共用的流水线阶段和目录结构
+- `case_studies/etfs/README.md`：etfs 参数和 notebook 与章节对照表
 
 ### 选读
 
-- [ ] `docs/running-notebooks.md` 的 "Case Study Notebooks" 一节（约第 199-360 行）：案例配置、run log、重跑结果为何与书不完全一致
-- [ ] `07_defining_the_learning_task/README.md`：标签、IC、多重检验（也可读到 etfs 02 时再看）
+- `docs/running-notebooks.md` 的 "Case Study Notebooks" 一节（约第 199-360 行）：案例配置、run log、重跑结果为何与书不完全一致
+- `07_defining_the_learning_task/README.md`：标签、IC、多重检验（也可读到 etfs 02 时再看）
 
 ### 暂时不读，用到再看
 
