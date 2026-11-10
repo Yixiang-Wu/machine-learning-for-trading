@@ -4,9 +4,9 @@
 
 ## 当前位置
 
-- 阶段：第 0 步，开始前要读的 Markdown
+- 阶段：第 2 步，etfs notebook（主读 `.py`，看图表时对照 `.ipynb`）
 - 正在读：无
-- 下一个：`case_studies/etfs/README.md`
+- 下一个：`case_studies/etfs/01_feasibility_analysis.py`
 
 ## 第 0 步：开始前要读的 Markdown
 
@@ -21,7 +21,7 @@
   - [x] 6.6 建立 baseline 检查点（大概）
   - [x] 6.7 搜索记录和 run logging（大概）
 - [x] `case_studies/README.md`（2026-11-10，大概）
-- [ ] `case_studies/etfs/README.md`
+- [x] `case_studies/etfs/README.md`（2026-11-10）
 - [ ] （选读）`docs/running-notebooks.md` 的 "Case Study Notebooks" 一节
 - [ ] （选读）`07_defining_the_learning_task/README.md`
 
