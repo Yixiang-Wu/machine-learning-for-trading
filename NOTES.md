@@ -305,3 +305,42 @@ regime 用来风控，不用来择时：事先定好规则（比如高波动时�
 - [ ] IC 和 Sharpe 为什么不一致（读 `13`、`14` 时）
 - [ ] DSR 怎么给结果打折（读 `13`、`14` 时）
 - [ ] run log 的三层结构和 hash（读 `06_linear` 时看 `registry.db`）
+
+## `case_studies/README.md`
+
+**一句话：** 9 个案例用同一套流程跑不同市场，每个案例的目录结构都一样。
+
+**9 个案例：** ETFs、加密永续合约、NASDAQ-100 日内、S&P 500 股票+期权、美股基本面、外汇、CME 期货、S&P 500 期权、美股全市场。ETFs 资产少、频率低，最容易入手，其他 8 个先不管。
+
+**阶段顺序一样，编号不同：** 可行性 → 标签 → 特征 → 评估 → 各类模型 → 模型分析 → 回测 → 仓位 → 成本 → 风险 → 策略分析。每个市场用的模型家族不同，所以 notebook 编号不同，具体看各案例自己的 README。
+
+**目录结构（以 etfs 为例）：**
+
+```
+case_studies/etfs/
+├── README.md              案例说明和阶段表
+├── config/setup.yaml      唯一配置来源（SSOT）：资产范围、成本、CV、标签
+├── 01_...py / .ipynb      按编号排列的 notebook
+├── labels/                生成的标签（不进 git）
+├── features/              生成的特征
+├── evaluation/            生成的特征诊断
+├── benchmark/             等权基准收益（随仓库提供，6.6 的对照组）
+└── run_log/               结果记录（下载 artifacts 或运行后才有）
+    └── registry.db        唯一结果来源（6.7 的 run log）
+```
+
+**两个"唯一"：**
+
+- `config/setup.yaml` 是唯一的配置来源，6.3 的交易设定和 6.5 的评估协议都在这里。
+- `run_log/registry.db` 是唯一的结果来源。
+
+**和前面内容的对应：**
+
+| 文件 | 作用 | 对应 |
+|---|---|---|
+| `config/setup.yaml` | 交易设定、成本、评估协议 | 6.3、6.5 |
+| `run_log/` | 每次运行按配置 hash 登记 | 6.7 |
+| `scripts/download_artifacts.py` | 下载结果，不用重训 | `what-this-is.md` 第 1 级 |
+| `scripts/create_experiment.py` | 建可写副本做自己的实验 | `what-this-is.md` 第 2 级 |
+
+**我的理解：** 只看了个大概。本地 etfs 目录还没有 `run_log/`（没下载 artifacts），`benchmark/` 已有。

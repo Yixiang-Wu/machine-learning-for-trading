@@ -6,7 +6,7 @@
 
 - 阶段：第 0 步，开始前要读的 Markdown
 - 正在读：无
-- 下一个：`case_studies/README.md`
+- 下一个：`case_studies/etfs/README.md`
 
 ## 第 0 步：开始前要读的 Markdown
 
@@ -20,7 +20,7 @@
   - [x] 6.5 时间序列评估协议（大概）
   - [x] 6.6 建立 baseline 检查点（大概）
   - [x] 6.7 搜索记录和 run logging（大概）
-- [ ] `case_studies/README.md`
+- [x] `case_studies/README.md`（2026-11-10，大概）
 - [ ] `case_studies/etfs/README.md`
 - [ ] （选读）`docs/running-notebooks.md` 的 "Case Study Notebooks" 一节
 - [ ] （选读）`07_defining_the_learning_task/README.md`
