@@ -5,8 +5,8 @@
 ## 当前位置
 
 - 阶段：第 2 步，etfs notebook（主读 `.py`，看图表时对照 `.ipynb`）
-- 正在读：无
-- 下一个：`case_studies/etfs/01_feasibility_analysis.py`
+- 正在读：`case_studies/etfs/01_feasibility_analysis.py`（读到 B.1，粗略）
+- 下一个：B.2 逐调仓日数可交易数量
 
 ## 第 0 步：开始前要读的 Markdown
 
@@ -27,7 +27,7 @@
 
 ## 第 2 步：etfs notebook
 
-- [ ] 01 `01_feasibility_analysis`
+- [ ] 01 `01_feasibility_analysis`（读到 B.1）
 - [ ] 02 `02_labels`
 - [ ] 03 `03_financial_features`
 - [ ] 04 `04_model_based_features`
